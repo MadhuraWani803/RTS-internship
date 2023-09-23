@@ -1,0 +1,395 @@
+body{
+  margin: 0%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  text-decoration: none;
+}
+/*--------------------------------------------------------------*/
+
+.topnav {
+    background-color: #333;
+    overflow: hidden; 
+    color: white;
+  }
+
+  .topnav a {
+    float: right;
+    color: #f8f6f6;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  /*--------------------------------------------------------*/
+
+  .searchbar {
+    background-color: red;
+    overflow: hidden;
+  }
+
+  .searchbar a {
+    float: left;
+    color: #f8f6f6;
+    text-align: center;
+    padding: 20px 50px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .searchbar a.extras{
+    float: right;
+    padding-left: 0%;
+    padding-right: 3%;
+  }
+
+  .searchbar input[type=text]{
+    /*box-sizing: border-box;*/
+    width: 25%;
+    align: center;
+    border: none;
+    padding: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 100px;
+    font-size: 20px;
+
+  }
+
+  .searchbar button{
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    padding: 11px;
+    background: #0f0f0f;
+    color: white;
+    font-size: 17px;
+    margin-top: 8px;
+    margin-bottom: 17px;
+    margin-left: -0.5%;
+   
+    /*border: 1px solid rgb(8, 8, 8);*/
+    border: none; /* Prevent double borders */
+    cursor: pointer;
+
+  }
+  /*----------------------------------------------------------------------------------------*/
+
+.dropbtn {                        /* Dropdown Button */
+color: black;
+padding: 10px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+background-color: white;
+}
+
+.dropdown {               /* The container <div> - needed to position the dropdown content */
+position: absolute;
+display: inline-block;
+margin-left: 50px;
+/*position: fixed; 
+top: 0;
+width: 100%; */
+}
+
+.dropdown-content {               /* Dropdown Content (Hidden by Default) */
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+width: 1200px;
+outline: 2px solid red;
+z-index: 1;
+}
+
+.dropdown-content a{
+text-decoration: none;
+color: black;
+font-size: 12px;
+border-bottom: 1px solid gray;
+padding: 8px 5px;
+}
+
+.dropdown-content a:hover {       /* Change color of dropdown links on hover */
+  background-color: gray;
+  }
+  
+.dropdown:hover .dropdown-content {     /* Show the dropdown menu on hover */
+  display: block;
+  }
+
+.main-category {
+width: 20%;
+border-right: 1px solid black;
+/*background-color: mediumspringgreen;*/
+position: static;
+display: block;
+}
+
+.side-menu {
+width: 20%;
+border-right: 1px solid gray;
+position: absolute;
+margin-left: 20%;
+display: none;
+z-index: 1;
+}
+
+.side-menu a{
+display: block;
+padding: 10px 14px;
+}
+
+.main-category:hover + .side-menu{ 
+display: block;
+}
+
+.sub-menu {
+  width: 20%;
+  border-right: 1px solid gray;
+  position: absolute;
+  margin-left: 100%;
+  display: none;
+  z-index: 1;
+  background-color: hotpink;
+  }
+  
+  .sub-menu a{
+  display: block;
+  padding: 10px 14px;
+  }
+
+  .side-menu a:hover + .sub-menu{ 
+    display: block;
+    }
+
+/*-------------------------------------------------------------------------------------------*/
+
+.centre-column{
+margin-left: 15%;
+margin-right: 15%;
+margin-top: 35px;
+
+width: 70%;
+padding: 10px;
+}
+
+.top-categories{
+  margin-top: 4%;
+  /*background-color: sandybrown;
+  border: 5px solid purple;*/
+  color: white;
+  margin-left: 1%;
+  
+}
+
+.row1{
+  content: "";
+  display: table;
+  clear: both;
+  
+  /*border: 5px solid brown; */
+
+}
+
+.red-box{
+  float: left;
+  text-align: left;
+  padding: 17px;
+  background-color: red;
+  border-radius: 7px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 13px;
+  width: 320px;
+  height: 170px;
+}
+
+.red-box button{
+  border-radius: 15px;
+  border-color: red;
+  float: right;
+  padding: 6px;
+  color: red;
+  font-weight: 500;
+}
+
+.category1{
+  float: left;
+  /*border: 3px solid blue;*/
+  width: 680px;
+  height: 170px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  
+}
+
+.items{
+  float: left;
+  background-color: red;
+  border-radius: 7px;
+  height: 170px;
+  width: 150px;
+  margin-left: 13px;
+  margin-right: 4px;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+ 
+}
+
+.items img{
+  padding: 5px;
+  padding-bottom: 2px;
+  border-radius: 7px;
+  height: 125px;
+  width: 150px;
+}
+
+.link{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.row2{
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+  margin-top: 13px;
+  /*border: 5px solid brown; */
+
+}
+
+.row2 .items{
+  margin-bottom: 17px;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+
+.shop-by-brand{
+  margin-top: 2%;
+  border: 1px solid black;
+}
+
+.brand-title h3{
+  text-align: center;
+  font-weight: 300;
+  color: orange;
+}
+
+.brand-title a{
+  float: right;
+  text-decoration: none;
+  color: gray;
+}
+
+.brands{
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+
+  border: peru;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+.full-length{
+ 
+}
+
+.sellers{
+  display: block;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  
+}
+
+.orange-box{
+  background-color: orange;
+  border-radius: 10px;
+  margin-left: 4px;
+  padding: 10px;
+  height: 320px;
+  width: 170px;
+}
+
+.orange-box-button{
+  border-radius: 30px;
+  padding: 6px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-weight: 500;
+  margin-left: 5px;
+  border: none;
+  width: 140px;
+
+}
+/*--------------------------------------------------------------------------------*/
+
+.advantages{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.factors{
+  float: left;
+  margin-right: 17px;
+}
+
+.image{
+  float: left;
+}
+
+.image img{
+  border-radius: 50%;
+  border: 2px solid deepskyblue;
+}
+
+.content{
+  font-size: 15px;
+  margin-left: 5px;
+  float: left;
+  color: gray; 
+}
+
+.content span{
+  color:deepskyblue;
+}
+/*---------------------------------------------------------------------------*/
+.details{
+ 
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.details .col-md-4, .details .col-md-2, .details .col-md-3{
+  float: left;
+  margin-right: 8px;
+}
+
+.details ul{
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 15px;
+}
+
+.details a{
+  color: gray;
+  text-decoration: none;
+}
